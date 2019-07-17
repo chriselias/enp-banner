@@ -23,7 +23,7 @@
   }
 
   img {
-    max-width: 200px;
+    max-width: 75px;
   }
 
   button {
@@ -36,11 +36,35 @@
     font-weight: 800;
   }
 
+  .logo {
+    display: flex;
+    align-items: center;
+
+    &__text {
+      padding: 0 10px;
+    }
+
+    &__ninja {
+      color: #FFC700;
+      font-weight: 800;
+      font-size: 24px;
+      text-transform: uppercase;
+    }
+  }
+
 }
 
 @media only screen and (max-width: 700px) {
   .banner {
     grid-template-columns: 1fr;
     text-align: center;
+
+    .logo {
+      text-align: left;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
   }
+
+
 }
